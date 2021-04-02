@@ -51,6 +51,9 @@ function App() {
             setEmailError(err.message);
             break;
           case "auth/wrong-password":
+            //Why do you have 2 separate cases for failed authantication
+            //This is just a hint but you shouldnt tell the user if either the password is wrong 
+            // ot the username is wrong. should be just one message and no indication which one it is.
             setPasswordError(err.message);
             break;
         }
