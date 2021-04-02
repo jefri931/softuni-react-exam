@@ -1,9 +1,9 @@
-// import Header from "../commons/Header/Header";
 import Header from "../commons/Header/Header";
 import {Carousel, Button } from "react-bootstrap";
 import "./homePage.css";
 
 function HomePage() {
+  //Indent your components correctly this impacts readability
   return (
     <>
     
