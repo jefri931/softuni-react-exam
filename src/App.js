@@ -105,8 +105,11 @@ function App() {
   //Api functions
   useEffect(() => {
     async function fetchPeople() {
+      //Save your urls in separate files and import them here.
       let result = await fetch("https://swapi.dev/api/people/?format=json");
       let data = await result.json();
+      //Perhaps you should have some error handling for different responses from these endpoints
+      //like say if you have no response at all or 404, 400 etc.
       setPeople(data.results);
     }
     async function fetchPlanets() {
